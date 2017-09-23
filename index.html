@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="jdifebo">
+	<link rel="icon" href="favicon.ico">
+	<link href="sakura-modified.css" rel="stylesheet">
+	<title>JavaScript Regex Cheatsheet</title>
+</head>
+
+<body>
+
+
+	<h1>JavaScript Regex Interactive Reference</h1>
+
+	<p>
+		Which strings will a regular expression match?  Quickly test various regular expresions
+		against a large list of English words.
+	</p>
+
+	<div>
+		<b>run &rarr; </b>any string containing the substring "run"
+	</div>
+	<div>
+		<b>run|ran &rarr; </b>any string containing the substring "run" or "ran"
+	</div>
+	<div>
+		<b>^hot &rarr; </b>any string that starts with "hot"
+	</div>
+	<div>
+		<b>hot$ &rarr; </b>any string that ends with "hot"
+	</div>
+	<div>
+		<b>h.t &rarr; </b>any string that contains "h", followed by any character, followed by "t", such as "hot" and "hat"
+	</div>
+	<div>
+		<b>pro.*ing &rarr; </b>any string that contains "pro", followed by any number of characters, followed by "ing"
+	</div>
+	<div>
+		<b>(ing|ed)$ &rarr; </b>either "ing" or "ed", followed by the end of the string
+	</div>
+	<div>
+		<b>cars?$ &rarr; </b>strings that end in "car", with an optional "s" at the end
+	</div>
+	<div>
+		<b>^.......$ &rarr; </b>Any seven character long string
+	</div>
+	<div>
+		<b>^.......?.?$ &rarr; </b>Any six, seven, or eight character long string
+	</div>
+
+	<hr/>
+	<input id="input" type="text" placeholder="Try Regex Here"/>
+	<div><b><span id="result-count"></span></b></div>
+	<br/>
+	<div id="results">
+		Loading...
+	</div>
+
+	<script src="regex-filter.js"></script>
+
+	<script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      
+        ga('create', 'UA-102532777-2', 'auto');
+        ga('send', 'pageview');
+      
+      </script>
+</body>
+
+</html>
